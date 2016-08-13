@@ -3,7 +3,7 @@
         "page-treeview",
         "disqus",
         "collapsible-chapters",
-        "theme-api"
+        "theme-ripe"
     ],
     "pluginsConfig": {
         "page-treeview": {
@@ -13,17 +13,6 @@
             "shortName": "huogh"
         },
         "collapsible-chapters": {},
-        "theme-api": {
-            "theme": "dark",
-            "split": true,
-            "languages": [{
-                "lang": "js",
-                "name": "JavasSript",
-                "default": true
-            }, {
-                "lang": "go",
-                "name": "Go"
-            }]
-        }
+        "theme-ripe": {}
     }
 }
