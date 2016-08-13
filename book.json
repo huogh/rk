@@ -1,7 +1,8 @@
 {
     "plugins": [
         "page-treeview",
-        "disqus"
+        "disqus",
+        "collapsible-chapters"
     ],
     "pluginsConfig": {
         "page-treeview": {
@@ -9,6 +10,7 @@
         },
         "disqus": {
             "shortName": "huogh"
-        }
+        },
+        "collapsible-chapters": {}
     }
 }
