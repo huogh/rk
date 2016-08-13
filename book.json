@@ -1,14 +1,10 @@
 {
     "plugins": [
-        "page-treeview",
-        "disqus"
+        "page-treeview"
     ],
     "pluginsConfig": {
         "page-treeview": {
             "style": "markdown"
-        },
-        "disqus": {
-            "shortName": "huogh"
         }
     }
 }
