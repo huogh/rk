@@ -14,7 +14,15 @@
         },
         "collapsible-chapters": {},
         "theme-api": {
-            "theme": "dark"
+            "theme": "dark",
+            "languages": [{
+                "lang": "js",
+                "name": "JavasSript",
+                "default": true
+            }, {
+                "lang": "go",
+                "name": "Go"
+            }]
         }
     }
 }
