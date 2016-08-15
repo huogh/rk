@@ -1,40 +1,80 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'publish' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
 2 info using npm@2.15.8
 3 info using node@v4.4.7
-4 verbose run-script [ 'prepublish', 'publish', 'postpublish' ]
-5 info prepublish rk@1.0.0
-6 info publish rk@1.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info rk@1.0.0 Failed to exec publish script
-9 verbose stack Error: rk@1.0.0 publish: `gitbook build && gulp publish`
-9 verbose stack Exit status 1
-9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at EventEmitter.emit (events.js:172:7)
-9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at ChildProcess.emit (events.js:172:7)
-9 verbose stack     at maybeClose (internal/child_process.js:827:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-10 verbose pkgid rk@1.0.0
-11 verbose cwd /Users/huoguanghua/Documents/rk
-12 error Darwin 15.6.0
-13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "publish"
-14 error node v4.4.7
-15 error npm  v2.15.8
-16 error code ELIFECYCLE
-17 error rk@1.0.0 publish: `gitbook build && gulp publish`
-17 error Exit status 1
-18 error Failed at the rk@1.0.0 publish script 'gitbook build && gulp publish'.
-18 error This is most likely a problem with the rk package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     gitbook build && gulp publish
-18 error You can get information on how to open an issue for this project with:
-18 error     npm bugs rk
-18 error Or if that isn't available, you can get their info via:
-18 error
-18 error     npm owner ls rk
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/huoguanghua/Documents/rk',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/huoguanghua/.npm/rk/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/huoguanghua/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/Users/huoguanghua/.npm/rk/1.0.0/package.tgz',
+10 verbose tar pack   '/Users/huoguanghua/Documents/rk' ]
+11 verbose tarball /Users/huoguanghua/.npm/rk/1.0.0/package.tgz
+12 verbose folder /Users/huoguanghua/Documents/rk
+13 info prepublish rk@1.0.0
+14 verbose addLocalTarball adding from inside cache /Users/huoguanghua/.npm/rk/1.0.0/package.tgz
+15 verbose correctMkdir /Users/huoguanghua/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd rk@1.0.0
+17 verbose afterAdd /Users/huoguanghua/.npm/rk/1.0.0/package/package.json not in flight; writing
+18 verbose correctMkdir /Users/huoguanghua/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /Users/huoguanghua/.npm/rk/1.0.0/package/package.json written
+20 silly publish { name: 'rk',
+20 silly publish   version: '1.0.0',
+20 silly publish   description: '《信息系统项目管理师教程》（第2版）学习笔记',
+20 silly publish   main: 'gulpfile.js',
+20 silly publish   scripts:
+20 silly publish    { test: 'echo "Error: no test specified" && exit 1',
+20 silly publish      publish: 'gitbook build && gulp publish' },
+20 silly publish   repository: { type: 'git', url: 'git+https://github.com/huogh/rk.git' },
+20 silly publish   author: '',
+20 silly publish   license: 'ISC',
+20 silly publish   bugs: { url: 'https://github.com/huogh/rk/issues' },
+20 silly publish   homepage: 'https://github.com/huogh/rk#readme',
+20 silly publish   devDependencies: { gulp: '^3.9.1', 'gulp-gh-pages': '^0.5.4' },
+20 silly publish   readme: '《信息系统项目管理师教程》（第2版）学习笔记\n\n',
+20 silly publish   readmeFilename: 'README.md',
+20 silly publish   gitHead: '293fad21519818b6b8fe23a57c950cb206ec81d1',
+20 silly publish   _id: 'rk@1.0.0',
+20 silly publish   _shasum: '00cf3421d19c1f40f96540c6656e8e5152f8ee92',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name rk
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'rk',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'rk',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/rk
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/huoguanghua/.npm/rk/1.0.0/package.tgz
+29 verbose stack Error: auth required for publishing
+29 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+29 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:134:14
+29 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+29 verbose stack     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:104:3)
+29 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+29 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+29 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+29 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+29 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:73:5
+29 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+30 verbose cwd /Users/huoguanghua/Documents/rk
+31 error Darwin 15.6.0
+32 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+33 error node v4.4.7
+34 error npm  v2.15.8
+35 error code ENEEDAUTH
+36 error need auth auth required for publishing
+36 error need auth You need to authorize this machine using `npm adduser`
+37 verbose exit [ 1, true ]
