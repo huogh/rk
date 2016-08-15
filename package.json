@@ -1,21 +1,24 @@
 {
-    "name": "software_exam",
-    "version": "1.0.0",
-    "description": "《信息系统项目管理师教程》（第2版）学习笔记",
-    "main": "index.js",
-    "dependencies": {},
-    "devDependencies": {
-        "gulp": "^3.9.1",
-        "gulp-gh-pages": "^0.5.4"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "publish": "gitbook build && gulp publish",
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://git.gitbook.com/huogh/software_exam.git"
-    },
-    "author": "",
-    "license": "ISC"
+  "name": "rk",
+  "version": "1.0.0",
+  "description": "《信息系统项目管理师教程》（第2版）学习笔记",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "gitbook build && gulp publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huogh/rk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huogh/rk/issues"
+  },
+  "homepage": "https://github.com/huogh/rk#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4"
+  }
 }
